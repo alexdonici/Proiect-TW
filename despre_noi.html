@@ -1,69 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact - DonVeggies</title>
+    <title>Despre Noi - DonVeggies</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+  
 </head>
 <body>
     <div class="header">
-        <div class="logo">
-            <img src="Images/OriginalLogo.png">
-            <h1>DonVeggies</h1>
-        </div>
-        <nav class="navbar">
-            <a href="home.html">ACASA</a>
-            <a href="despre_noi.html">DESPRE NOI</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
+        <!-- Header content -->
     </div>
-
+    
     <div class="container">
-        <h2>Contactează-ne</h2>
-        <div class="contact-form">
-            <form id="contactForm">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mesaj:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <input type="submit" value="Trimite">
-            </form>
+        <div class="person">
+            <h2>John Doe</h2>
+          
+            <p>John Doe is a member of our family. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
-        <div class="vegetable-dropdown">
-            <label for="vegetable">Alege legume:</label>
-            <select id="vegetable" name="vegetable">
-                <option value="">-- Selectează --</option>
-                <option value="cucumbers">Castraveți</option>
-                <option value="tomatoes">Roșii</option>
-                <option value="both">Castraveți și Roșii</option>
-            </select>
+        <div class="person">
+            <h2>Jane Doe</h2>
+            
+            <p>Jane Doe is another member of our family. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="person">
+            <h2>David Smith</h2>
+            
+            <p>David Smith is also part of our family. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="person">
+            <h2>Emily Johnson</h2>
+            
+            <p>Emily Johnson completes our family. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
     </div>
 
     <footer>
-        <p>© 2023 DonVeggies. All rights reserved.</p>
+        <p>© 2023 DonVeggies. All rights reserved.<p> 
     </footer>
-
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form submission
-            
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-            var selectedVegetable = document.getElementById("vegetable").value;
-            
-            // Perform actions based on form data
-            console.log("Email: " + email);
-            console.log("Message: " + message);
-            console.log("Selected Vegetable: " + selectedVegetable);
-            
-            // Clear form fields
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-            document.getElementById("vegetable").value = "";
-        });
-    </script>
 </body>
 </html>
