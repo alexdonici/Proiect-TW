@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - DonVeggies</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Images/OriginalLogo.png">
+            <h1>DonVeggies</h1>
+        </div>
+        <nav class="navbar">
+            <a href="home.html">ACASA</a>
+            <a href="despre_noi.html">DESPRE NOI</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h4>Contactează-ne   </h4>
+        <div class="contact-form">
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Trimite">
+            </form>
+        </div>
+
+        <div class="vegetable-dropdown">
+            <label for="vegetable">Alege legume:</label>
+            <select id="vegetable" name="vegetable">
+                <option value="">-- Selectează --</option>
+                <option value="cucumbers">Castraveți</option>
+                <option value="tomatoes">Roșii</option>
+                <option value="both">Castraveți și Roșii</option>
+            </select>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 DonVeggies. All rights reserved.</p>
+    </footer>
+</body>
+</html>
