@@ -71,7 +71,7 @@ project/
 │   │   └── style.css
 │   ├── js/
 │   │   ├── script.js
-│   │   └── contact.js
+│   │   
 │   └── images/
 |
 │── index.html
@@ -80,7 +80,8 @@ project/
 │── admin.html
 ├── server.js
 ├── contact.js
-└── mesaje.json
+├── mesaje.json
+├── contact.js
 
 ```
 
