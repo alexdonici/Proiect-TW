@@ -1,0 +1,320 @@
+/* ===== STILURI GLOBALE ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121b13; /* fundal mai deschis decât #000 */
+    color: #6aff75; /* verde clar pentru text */
+}
+
+a {
+    color: #6aff75;
+}
+
+
+/* ===== HEADER ȘI NAVIGARE (TOATE PAGINILE) ===== */
+.header {
+    background-color: #32CD32;
+    padding: 0;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+.logo-img {
+    max-width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.site-title {
+    margin: 0 30px 0 0;
+    font-size: 2.2rem;
+    color: black;
+    font-family: Arial, sans-serif;
+    flex-shrink: 0;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: black;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: #228B22; /* verde pădure */
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #121b13;
+    color: #6aff75;
+}
+
+/* ===== CONTENUT PRINCIPAL GENERAL ===== */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #121b13;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 30px;
+}
+
+/* ===== TIPOGRAFIE GLOBALĂ ===== */
+h1, h2, h3, h4 {
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+}
+
+/* ===== BUTON, INPUT, FORM ELEMENTS GLOBAL ===== */
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ===== SELECTORI ȘI ALTE ELEMENTE UI GLOBALE ===== */
+.select-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.select-container select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* ===== PAGINA DESPRE NOI ===== */
+.person {
+    max-width: 300px;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #32CD32;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* ===== PAGINA CONTACT ===== */
+.contact-form {
+    max-width: 400px;
+    margin: 10%;
+}
+
+/* ===== CARDURI LEGUME ===== */
+.castravete, 
+.rosie, 
+.vanata,
+.ardeikapia,
+.leguma-card {
+    font-family: 'Courier New', Courier, monospace;
+    width: 250px;
+    border: 2px solid #32CD32;
+    padding: 10px 15px;
+    margin: 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.castravete:hover,
+.rosie:hover,
+.vanata:hover,
+.ardeikapia:hover,
+.leguma-card:hover {
+    background-color: #32CD32;
+    color: black;
+    transform: scale(1.05);
+}
+
+.castravete:hover p, 
+.rosie:hover p,
+.vanata:hover p,
+.ardeikapia:hover p,
+.leguma-card:hover a {
+    color: black !important;
+}
+
+.cstimg, 
+.rosieimg, 
+.vanataimg,
+.ardeikapiaimg,
+.leguma-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.ardeikapiaimg {
+    margin-top: 60px;
+}
+
+.ardei2 {
+    width: 60%;
+    height: auto;
+    margin-left: 50%;
+    display: block;
+}
+
+.legume-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.seccastravete,
+.secrosie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sectiune-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 200px 0;
+}
+
+.sectiune-text {
+    flex: 1;
+    text-align: left;
+}
+
+.sectiune-imagine {
+    flex: 1;
+    text-align: right;
+    margin-right: 200px;
+}
+
+.sectiune-imagine img {
+    max-width: 100%;
+    height: auto;
+}
+
+.secv1,
+.secv2,
+.secv3,
+.secv4 {
+    font-size: 30px;
+}
+
+.pret {
+    font-weight: bold;
+    color: #32CD32;
+    font-size: 1.2em;
+}
+
+/* ===== CLASE UTILE SAU EXTRA ===== */
+.exp2 {
+    color: #32CD32;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.exp {
+    font-size: 28px;
+}
+
+/* ===== DESIGN RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .person {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .castravete,
+    .rosie,
+    .vanata,
+    .ardeikapia,
+    .leguma-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .legume-container {
+        flex-wrap: wrap;
+    }
+
+    .seccastravete,
+    .secrosie,
+    .sectiune-flex {
+        flex-direction: column;
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    .sectiune-imagine {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .ardei2 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* ===== SMOOTH SCROLL (GLOBAL) ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+.fixardei {
+    padding-top: 30%;
+}

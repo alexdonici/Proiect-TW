@@ -1,43 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
+    <meta charset="UTF-8">
     <title>Despre Noi - DonVeggies</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  
+    <!-- Link către fișierul CSS pentru stilizare -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+ 
 <body>
+    <!-- Header-ul site-ului cu logo, titlu și meniul de navigare -->
     <div class="header">
-        <!-- Header content -->
+        <div class="header-flex">
+            <img class="logo-img" src="images/OriginalLogo.png" alt="Logo">
+            <h1 class="site-title">DonVeggies</h1>
+            <nav class="navbar">
+                <a href="index.html">ACASĂ</a>
+                <a href="despre_noi.html">DESPRE NOI</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
     </div>
-    
+
+    <!-- Select pentru filtrarea membrilor familiei după nume -->
+    <div class="select-container">
+        <label for="select-member">Alege un membru:</label>
+        <select id="select-member">
+            <option value="all">Toți</option>
+            <option value="john">John Jablonowski</option>
+            <option value="jane">Jane Jablonowski</option>
+            <option value="david">David Smith</option>
+            <option value="emily">Emily Johnson</option>
+        </select>
+    </div>
+
+    <!-- Container pentru afișarea membrilor familiei -->
     <div class="container">
-        <div class="person">
-            <h2>John Doe</h2>
-          
-            <p>John Doe is a member of our family. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- Card pentru membrul John Doe, atributul data-member folosit pentru filtrare -->
+        <div class="person"  data-member="john">
+            <h2>John Jablonowski</h2>
+            <img src="images/Randomman1.png" alt="John Doe" class="person-image">
+            <p>John Jablonowski are 32 ani si este CEO-ul firmei.</p>
         </div>
 
-        <div class="person">
-            <h2>Jane Doe</h2>
-            
-            <p>Jane Doe is another member of our family. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- Card pentru membrul Jane Doe -->
+        <div class="person" data-member="jane">
+            <h2>Jane Jablonowski</h2>
+            <img src="images/Randomwoman1.png" alt="Jane Doe" class="person-image">
+            <p>Jane Jablonowski are 31 ani, este sotia lui John si responsabila pe partea de marketing.</p>
         </div>
 
-        <div class="person">
+        <!-- Card pentru membrul David Smith -->
+        <div class="person" data-member="david">
             <h2>David Smith</h2>
-            
-            <p>David Smith is also part of our family. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="images/Randomman2.png" alt="David Smith" class="person-image">
+            <p>David Smith are 26 ani, puternic si responsabil pe partea de logistica.</p>
         </div>
 
-        <div class="person">
+        <!-- Card pentru membrul Emily Johnson -->
+        <div class="person" data-member="emily">
             <h2>Emily Johnson</h2>
-            
-            <p>Emily Johnson completes our family. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="images/Randomwoman2.png" alt="Emily Johnson" class="person-image">
+            <p>Emily Johnson, are 28 ani si se ocupa de PR-ul firmei.</p>
         </div>
     </div>
 
+    <!-- Footer-ul site-ului -->
     <footer>
-        <p>© 2023 DonVeggies. All rights reserved.<p> 
+        <p>© <span id="year"></span> DonVeggies. Toate drepturile rezervate.</p>
     </footer>
+
+    <!-- Import jQuery pentru ușurință în manipularea DOM -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Scriptul personalizat pentru interactivitate (ex: filtrare membri) -->
+    <script src="js/script.js"></script>
+
+    <script>
+        // Setează anul curent în footer automat
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
