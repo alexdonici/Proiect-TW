@@ -42,7 +42,7 @@
 
 ### Clonează repository-ul:
 ```bash
-git clone [https://github.com/alexdonici/Proiect-TW]
+git clone https://github.com/alexdonici/Proiect-TW
 ```
 
 ### Instalează dependințele:
